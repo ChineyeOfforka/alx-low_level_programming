@@ -1,34 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - To print combination of two digits
+ * main - Print a - z in small letters
  *
- * Return: Always(Success)
+ * Return: Always (Success)
  */
 
 int main(void)
 {
-	int i, j;
+	char alph;
 
-	for (i = '0'; i <= '9'; i++)
-	{
-		for (j = '0'; j <= '9'; j++)
-		{
-			if (i < j)
-			{
-				putchar(i);
-				putchar(j);
-
-				if (i != '8' || (i == '8' && j != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
+	for (alph = 'a'; alph <= 'z'; alph++)
+		putchar(alph);
 
 	putchar('\n');
-
 	return (0);
 }
